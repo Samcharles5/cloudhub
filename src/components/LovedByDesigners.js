@@ -27,7 +27,7 @@ const LovedByDesigners = () => {
       className="animated-background py-12 px-4 md:px-12" 
       style={{ textAlign: 'center', backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <h2 className="text-2xl sm:text-3xl font-bold text-black mb-6 loved-by-title">
+      <h2 className="text-2xl sm:text-3xl font-bold text-black mb-6 loved-by-title typing">
         Loved By Designers At
       </h2>
       <div className="flex flex-wrap justify-center">
@@ -40,7 +40,7 @@ const LovedByDesigners = () => {
             <img 
               src={company.logo} 
               alt={`${company.name} logo`} 
-              className="max-w-full max-h-12" 
+              className="max-w-full max-h-12 pulse" 
             />
           </div>
         ))}

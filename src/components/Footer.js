@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <div className='flex flex-col items-center'>
         <div>
-          <img src={img} alt='Logo' className='w-12 h-auto rotate' />
+          <img src={img} alt='Logo' className='w-12 h-auto rotate pulse' />
         </div>
         <div className='flex flex-col md:flex-row flex-wrap justify-center mt-8 space-y-8 md:space-y-0 md:space-x-12'>
           <div>

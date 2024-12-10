@@ -27,7 +27,7 @@ function Testimonials() {
       style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 bounce">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="p-6 bg-white rounded-lg shadow-lg">
               <div className="mb-4">
@@ -37,7 +37,7 @@ function Testimonials() {
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.author} 
-                  className="w-12 h-12 rounded-full mr-4" 
+                  className="w-12 h-12 rounded-full mr-4 pulse" 
                 />
                 <div>
                   <h4 className="text-gray-900 font-bold text-sm sm:text-base">{testimonial.author}</h4>

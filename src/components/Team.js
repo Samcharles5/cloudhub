@@ -16,10 +16,10 @@ const Team = () => {
         <img 
           src={img} 
           alt="Logo" 
-          className="mx-auto rotate w-32 md:w-48"
+          className="mx-auto rotate w-32 md:w-48 pulse"
         />
       </div>
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 typing">
         Increase your team’s visibility and alignment
       </h1>
       <p className="text-black mb-6 text-black">

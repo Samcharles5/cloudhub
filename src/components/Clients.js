@@ -15,7 +15,7 @@ function Clients() {
       style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="container mx-auto text-center">
-        <h2 className="text-2xl font-bold mb-8 text-black">Loved By Designers At</h2>
+        <h2 className="text-2xl font-bold mb-8 text-black typing">Loved By Designers At</h2>
         <div className="flex flex-wrap justify-center items-center space-x-0 space-y-4 md:space-y-0 md:space-x-6">
           <div className="w-1/2 md:w-auto">
             <img src={img1} alt="Client 1" className="max-h-8 md:max-h-12 mx-auto" />

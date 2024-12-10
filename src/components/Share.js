@@ -8,7 +8,7 @@ function Share() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
           <div className="left-content">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 typing">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 typing">
               Share anything you’re working on.
             </h2>
             <p className="text-black mb-8">
