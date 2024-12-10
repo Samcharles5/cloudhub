@@ -1,0 +1,46 @@
+.container {
+    font-family: Arial, sans-serif; 
+    
+    margin-inline: auto;
+  
+  }
+  
+  .header {
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
+    color: white;
+    text-align: center;
+    padding: 20px;
+  
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 10px 0;
+  }
+  
+  .header button {
+    background-color: white;
+    color: orange;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .dashboard-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  

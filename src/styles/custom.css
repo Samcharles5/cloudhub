@@ -1,0 +1,140 @@
+/* Create a parallax effect */
+@keyframes backgroundParallax {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  /* Zoom and Fade Animation */
+  /* @keyframes zoomAndFade {
+    0% {
+      background-size: 100%;
+      opacity: 0.5;
+    }
+    50% {
+      background-size: 120%;
+      opacity: 1;
+    }
+    100% {
+      background-size: 100%;
+      opacity: 0.5;
+    }
+  } */
+  
+  /* Apply animations to background */
+  .animated-background {
+    animation: backgroundParallax 30s ease-in-out infinite, zoomAndFade 10s ease-in-out infinite;
+    /* Background moves slowly with the parallax effect */
+    animation-delay: 0s, 2s; /* Different start times for zoom and fade */
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  
+  /* Make the content overlay clear and easy to read */
+  .hero {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Adjust the container content */
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .text-center {
+    color: white; /* To ensure text stands out against background */
+    z-index: 3;
+  }
+  
+  button {
+    background-color: #f39c12;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e67e22; /* Bright color change on hover */
+  }
+  
+  .loved-by-title {
+    color: black;
+  }
+  
+  /* Bounce */
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Text Typing */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid black;
+  width: 0;
+  animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/* Pulse */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Rotate */
+.rotate {
+  animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
