@@ -1,9 +1,10 @@
 import React from 'react';
 import img from '../assets/images/share.png';
+import backgroundImage from '../assets/images/BGimg.png';
 
 function Share() {
   return (
-    <section className="share py-16 bg-white">
+    <section className="share py-16 bg-white animated-background" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
@@ -21,7 +22,7 @@ function Share() {
             </div>
           </div>
           
-          <div className="right-content">
+          <div className="right-content bounce">
             <img src={img} alt="New Content" className="w-full h-auto object-cover"/>
           </div>
         </div>

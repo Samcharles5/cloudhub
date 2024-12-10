@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import img from '../assets/images/team.png';
+import img from '../assets/images/team.svg';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);

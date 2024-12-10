@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../assets/images/team.png';
+import img from '../assets/images/team.svg';
 import backgroundImage from '../assets/images/BGimg.png';
 
 const Team = () => {
