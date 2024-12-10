@@ -4,37 +4,35 @@ import backgroundImage from '../assets/images/BGimg.png';
 
 const Team = () => {
   return (
-    <div className='animated-background' style={{ textAlign: 'center', padding: '50px', backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover',backgroundPosition: 'center' }}>
-      <div style={{ marginBottom: '20px' }}>
+    <div 
+      className="animated-background text-center py-12 px-4"
+      style={{
+        backgroundImage: `url(${backgroundImage})`, 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center'
+      }}
+    >
+      <div className="mb-8">
         <img 
           src={img} 
           alt="Logo" 
-          style={{ display: 'block', margin: '0 auto' }} 
-          className='rotate'
+          className="mx-auto rotate w-32 md:w-48"
         />
       </div>
-      <h1>Increase your team’s visibility and alignment</h1>
-      <p>Start for free, flexible for all teams.</p>
-      <div style={{ marginTop: '20px' }}>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
+        Increase your team’s visibility and alignment
+      </h1>
+      <p className="text-black mb-6 text-black">
+        Start for free, flexible for all teams.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-center gap-4">
         <button 
-          style={{ 
-            marginRight: '10px', 
-            padding: '10px 20px', 
-            backgroundColor: 'white', 
-            border: '1px solid #ccc', 
-            cursor: 'pointer' 
-          }}
+          className="px-6 py-3  text-gray-800 border border-gray-300 rounded-md hover:bg-gray-100 transition duration-300"
         >
           Request a demo
         </button>
         <button 
-          style={{ 
-            padding: '10px 20px', 
-            backgroundColor: '#ff5722', 
-            color: 'white', 
-            border: 'none', 
-            cursor: 'pointer' 
-          }}
+          className="px-6 py-3 bg-red-500 text-white border-none rounded-md hover:bg-red-400 transition duration-300"
         >
           Start for free
         </button>

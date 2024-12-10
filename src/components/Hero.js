@@ -16,39 +16,38 @@ function Hero() {
 
   return (
     <section
-      className="hero min-h-screen flex items-center justify-center bg-gray-100 animated-background " style={{backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover',backgroundPosition: 'center' }}>
+      className="hero min-h-screen flex items-center justify-center bg-gray-100 animated-background" 
+      style={{backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover',backgroundPosition: 'center' }}
+    >
       <div className="container mx-auto p-8">
         <div className="text-center mb-12" style={mar}>
-          <h1 className="text-4xl font-bold text-gray-800 typing">Create, inspect, and apply synthetic surveillance broadly.</h1>
-          <p className="text-gray-600 mt-4">Start with a stunning homepage. Stay motivated without hurting your pocket.</p>
-          <button className="mt-6 bg-red-500 text-white px-6 py-2 rounded-md">Start for free</button>
+          <h1 className="text-3xl font-bold text-gray-800 typing md:text-4xl sm:text-2xl">Create, inspect, and apply synthetic surveillance broadly.</h1>
+          <p className="text-gray-600 mt-4 sm:text-lg text-base">Start with a stunning homepage. Stay motivated without hurting your pocket.</p>
+          <button className="mt-6 bg-red-500 text-white px-6 py-2 rounded-md sm:px-4 sm:py-2">Start for free</button>
         </div>
 
-       
-        <div className="relative heroimg ">
-          
-          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 space-y-2 pulse" >
-            <div className="image1 relative ">
-              <img src={image4} alt="Image 1" />
+        <div className="relative heroimg flex flex-col md:flex-row items-center justify-center">
+          <div className="flex flex-col items-center md:items-start md:absolute left-0 top-1/2 transform md:-translate-y-1/2 space-y-2 pulse">
+            <div className="relative mb-4 md:mb-0">
+              <img src={image4} alt="Image 1" className="w-24 sm:w-20"/>
             </div>
-            <div className="image2 relative  transform translate-x-40">
-              <img src={image2} alt="Image 2" />
+            <div className="relative mb-4 md:mb-0 transform md:translate-x-40">
+              <img src={image2} alt="Image 2" className="w-24 sm:w-20"/>
             </div>
-            <div className="image3 relative ">
-              <img src={image6} alt="Image 3" />
+            <div className="relative">
+              <img src={image6} alt="Image 3" className="w-24 sm:w-20"/>
             </div>
           </div>
 
-
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 space-y-2 pulse" >
-            <div className="image4 relative ">
-              <img src={image1} alt="Image 4" />
+          <div className="flex flex-col items-center md:items-end md:absolute right-0 top-1/2 transform md:-translate-y-1/2 space-y-2 pulse">
+            <div className="relative mb-4 md:mb-0">
+              <img src={image1} alt="Image 4" className="w-24 sm:w-20"/>
             </div>
-            <div className="image5 relative transform -translate-x-40">
-              <img src={image5} alt="Image 5" />
+            <div className="relative mb-4 md:mb-0 transform md:-translate-x-40">
+              <img src={image5} alt="Image 5" className="w-24 sm:w-20"/>
             </div>
-            <div className="image6 relative">
-              <img src={image2} alt="Image 6" />
+            <div className="relative">
+              <img src={image2} alt="Image 6" className="w-24 sm:w-20"/>
             </div>
           </div>
         </div>

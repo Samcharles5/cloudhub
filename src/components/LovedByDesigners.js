@@ -23,12 +23,25 @@ const LovedByDesigners = () => {
   ];
 
   return (
-    <div className='animated-background' style={{ textAlign: 'center', padding: '20px', backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <h2 className="loved-by-title">Loved By Designers At</h2> {/* Added CSS class */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+    <div 
+      className="animated-background py-12 px-4 md:px-12" 
+      style={{ textAlign: 'center', backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
+      <h2 className="text-2xl sm:text-3xl font-bold text-black mb-6 loved-by-title">
+        Loved By Designers At
+      </h2>
+      <div className="flex flex-wrap justify-center">
         {companies.map((company, index) => (
-          <div key={index} style={{ margin: '10px', padding: '10px', border: '1px solid #ddd', borderRadius: '8px' }}>
-            <img src={company.logo} alt={`${company.name} logo`} style={{ maxWidth: '100px', maxHeight: '50px' }} />
+          <div 
+            key={index} 
+            className="m-4 p-4 border border-gray-300 rounded-lg flex justify-center items-center" 
+            style={{ maxWidth: '120px' }}
+          >
+            <img 
+              src={company.logo} 
+              alt={`${company.name} logo`} 
+              className="max-w-full max-h-12" 
+            />
           </div>
         ))}
       </div>
